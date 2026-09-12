@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.EventDetailsActivity">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/back"
+            style="@style/H1"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:text="&lt; Back"/>
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_1"/>
+
+        <TextView
+            android:id="@+id/eventPlantTitle"
+            style="@style/H1"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="Mahogany"/>
+
+        <TextView
+            android:id="@+id/eventName"
+            style="@style/H1"
+            android:layout_marginBottom="10dp"
+            android:text="Let's Plant"/>
+
+        <TextView
+            android:id="@+id/eventDescription"
+            style="@style/Label"
+            android:layout_marginBottom="10dp"
+            android:text="Are you a plantito or a plantita who loves mahogay? Join us on our planting event this upcoming november 3, 3023 in General, Trias, Caiviate. See you there!"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/eventDate"
+                android:layout_weight="1"
+                style="@style/Label"
+                android:text="Date: Augutst 23, 3034"/>
+
+            <TextView
+                android:id="@+id/eventPlant"
+                android:layout_weight="1"
+                style="@style/Label"
+                android:text="Plant: Augutst 23, 3034"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/eventStatus"
+                android:layout_weight="1"
+                style="@style/Label"
+                android:text="Status: Ongoing"/>
+
+            <TextView
+                android:id="@+id/eventVolunteers"
+                android:layout_weight="1"
+                style="@style/Label"
+                android:text="Volunteers: 1/20"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/H1"
+            android:textSize="15sp"
+            android:layout_marginVertical="5dp"
+            android:text="Volunteers"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/volunteersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

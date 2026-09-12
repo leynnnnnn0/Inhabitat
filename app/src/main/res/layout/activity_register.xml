@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register_page_bg"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="270dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:text="Name"
+               />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:hint="Enter your name"
+                style="@style/MainInput"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:text="Username"
+                />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:hint="Enter your username"
+                style="@style/MainInput"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:text="Date of Birth"
+                />
+
+            <EditText
+                android:id="@+id/dateOfBirth"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:hint="Enter your date of birth"
+                style="@style/MainInput"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:text="Password"
+                />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:hint="Enter your password"
+                style="@style/MainInput"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Label"
+                android:text="Confirm Password"
+                />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg"
+                android:layout_width="match_parent"
+                android:hint="Enter your password again"
+                style="@style/MainInput"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_bg"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Register Now"
+        android:layout_height="50dp"/>
+
+</LinearLayout>

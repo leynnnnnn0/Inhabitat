@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginVertical="5dp"
+    android:id="@+id/container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/eventImage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/default_1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eventName"
+                    style="@style/H1"
+                    android:textSize="15sp"
+
+                    android:text="Let's Plant"/>
+
+                <TextView
+                    android:id="@+id/eventDescription"
+                    style="@style/Label"
+                    android:textSize="10sp"
+                    android:text="Whtat the plant narra tree in the place where we only know."/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginVertical="10dp">
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/eventDate"
+                style="@style/Label"
+                android:layout_weight="1"
+                android:text="Date: Auguts 29, 2023"/>
+
+            <TextView
+                android:id="@+id/eventPlant"
+                style="@style/Label"
+                android:text="Plant: Acacia"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/eventStatus"
+                style="@style/Label"
+                android:layout_weight="1"
+                android:text="Status: Ongoing"/>
+
+            <TextView
+                android:id="@+id/eventVolunteers"
+                style="@style/Label"
+
+                android:text="Volunteers: 12/50"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
